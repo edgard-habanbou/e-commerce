@@ -14,7 +14,7 @@ if ($_POST['action'] == "signup") {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $gender = $_POST['gender']; //0 Male, 1 Female
-    $role = 2; // 1 Admin 2 User
+    $role = 2; // 1 Sellers 2 User
 
     $hashed_password = crypt($password, PASSWORD_DEFAULT);
 

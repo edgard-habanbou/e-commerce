@@ -22,6 +22,7 @@ $num_rows = $query->num_rows;
 $query->bind_result($user_id, $hashed_password, $user_role);
 $query->fetch();
 $response = [];
+
 if ($num_rows == 0) {
     $response['status']  = 'User Not Found';
     echo json_encode($response);
